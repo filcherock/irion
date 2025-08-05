@@ -9,6 +9,15 @@
 </div>
 
 # Content
-- About the project
+- [About the project](#About-the-project)
 - History
 - Download
+
+# About the project
+<img src="os1.png">
+Irion is a 16-bit operating system written in NASM and C++. This operating system is under development.
+
+---
+
+# Irion Software Package
+<img src="isp.png">
