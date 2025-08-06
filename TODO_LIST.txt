@@ -1,0 +1,8 @@
+1) create command handler        [IN PROGRESS]
+2) create the first programs     [...]
+3) create a simple file system   [...]
+4) mouse driver                  [...]
+5) desktop                       [...]
+6) JIT compiler                  [...]
+
+I don't know why, I don't know why, I just like it :)
