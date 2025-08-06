@@ -1,3 +1,8 @@
+; ==================================================================
+; Irion OS - The Irion Operating System bootloader
+; Copyright (C) 2025 filcher
+; ==================================================================
+
 BITS 16
 global _start
 extern kernel_main
