@@ -1,3 +1,10 @@
+/*
+==================================================================
+Irion OS - The Irion Operating System Kernel
+Copyright (C) 2025 filcher
+==================================================================
+*/
+
 #include <stdint.h>
 #include <stdbool.h>
 
