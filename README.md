@@ -10,7 +10,7 @@
 
 # Content
 - [About the project](#About-the-project)
-- History
+- [History](#History)
 - Download
 
 # About the project
@@ -21,3 +21,12 @@ Irion is a 16-bit operating system written in NASM and C++. This operating syste
 
 # Irion Software Package
 <img src="isp.png">
+
+Irion OS has its own software package, here is the list of programs:
+- Block.Note *(Text editor)*
+- FavoRit Code Irion Edition *(Code editor)*
+
+---
+
+# History
+The development of Irion began on August 4, 2025. Initially, it was written in NASM and C++. There was no clear goal for creating the OS, it was developed for educational purposes.
