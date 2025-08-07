@@ -8,10 +8,10 @@
 
 </div>
 
-# Content
+# 📝 Content
 - [About the project](#About-the-project)
 - [History](#History)
-- Download
+- [Download](#Download)
 
 # About the project
 <img src="os1.png">
@@ -27,6 +27,29 @@ Irion OS has its own software package, here is the list of programs:
 - FavoRit Code Irion Edition *(Code editor)*
 
 ---
+
+# ⚒️ Download
+``` bash
+# Clone the repository
+git clone https://github.com/filcherock/irion.git
+cd irion
+
+```
+
+# ⚒️ Compilation
+``` bash
+# Install the necessary packages
+sudo apt install nasm
+sudo apt install gcc
+
+# Compilation
+sh build.sh
+```
+
+# 🚀 Launch
+``` bash
+qemu-system-i386 -cdrom os.iso
+```
 
 # History
 The development of Irion began on August 4, 2025. Initially, it was written in NASM and C++. There was no clear goal for creating the OS, it was developed for educational purposes.
