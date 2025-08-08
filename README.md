@@ -51,6 +51,10 @@ sh build.sh
 qemu-system-i386 -cdrom os.iso
 ```
 
+# Future
+<img src="irionGUI.png">
+In the future, the graphical shell of the system will be developed. At first, there will be a simple old interface, and then we will gradually improve and improve it.
+
 # History
 The development of Irion began on August 4, 2025. Initially, it was written in NASM and C++. There was no clear goal for creating the OS, it was developed for educational purposes.
 
