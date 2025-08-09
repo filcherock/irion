@@ -1,17 +1,33 @@
-BUILD_DIR=build
+GREEN='\033[32m'
+NC='\033[0m'
+logo='`7MMF*`7MM***Mq.  `7MMF*  .g8""8q.   `7MN.   `7MF*
+  MM    MM   `MM.   MM  .dP*    `YM.   MMN.    M  
+  MM    MM   ,M9    MM  dM*      `MM   M YMb   M  
+  MM    MMmmdM9     MM  MM        MM   M  `MN. M  
+  MM    MM  YM.     MM  MM.      ,MP   M   `MM.M  
+  MM    MM   `Mb.   MM  `Mb.    ,dP*   M     YMM  
+.JMML..JMML. .JMM..JMML.  `"bmmd"*   .JML.    YM'
 
+clear
 
-mkdir -p $BUILD_DIR
+echo " "
+echo "${logo}"
+echo " "
 
-nasm -f elf src/boot.asm -o $BUILD_DIR/boot.o
-gcc -m32 -ffreestanding -fno-pic -c src/kernel/kernel.cpp -o $BUILD_DIR/kernel.o
+echo -e "${GREEN}Compiling the bootloader${NC}"
+nasm -f bin src/boot/boot.asm -o bin/boot.bin
 
-ld -m elf_i386 -T linker.ld -o $BUILD_DIR/kernel.elf \
-    $BUILD_DIR/boot.o $BUILD_DIR/kernel.o
-objcopy -O binary $BUILD_DIR/kernel.elf $BUILD_DIR/boot.bin
+echo -e "${GREEN}Compiling the kernel and programs${NC}"
+nasm -f bin src/kernel/kernel.asm -o bin/kernel.bin
+nasm -f bin program/calc.asm -o bin/calc.bin
 
-genisoimage -R -b boot.bin -no-emul-boot -boot-load-size 4 -o os.iso $BUILD_DIR/
+echo -e "${GREEN}Creating a disk image${NC}"
+dd if=/dev/zero of=img/irion.img bs=512 count=50
 
-rm -rf $BUILD_DIR
+dd if=bin/boot.bin of=img/irion.img conv=notrunc
+dd if=bin/kernel.bin of=img/irion.img bs=512 seek=1 conv=notrunc
+dd if=bin/calc.bin of=img/irion.img bs=512 seek=5 conv=notrunc
 
-qemu-system-i386 -cdrom os.iso
+echo -e "${GREEN}Launching QEMU...${NC}"
+qemu-system-i386 -hda img/irion.img
+
