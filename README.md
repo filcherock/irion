@@ -15,7 +15,7 @@
 
 # About the project
 <img src="os1.png">
-Irion is a 16-bit operating system written in NASM and C++. This operating system is under development.
+Irion is a 16-bit operating system written in NASM. This operating system is under development.
 
 ---
 
@@ -23,6 +23,7 @@ Irion is a 16-bit operating system written in NASM and C++. This operating syste
 <img src="isp.png">
 
 Irion OS has its own software package, here is the list of programs:
+- Irion Calculator *(Calculator)*
 - Block.Note *(Text editor)*
 - FavoRit Code Irion Edition *(Code editor)*
 
@@ -40,7 +41,6 @@ cd irion
 ``` bash
 # Install the necessary packages
 sudo apt install nasm
-sudo apt install gcc
 
 # Compilation
 sh build.sh
@@ -48,7 +48,7 @@ sh build.sh
 
 # 🚀 Launch
 ``` bash
-qemu-system-i386 -cdrom os.iso
+qemu-system-i386 -hda img/irion.img
 ```
 
 # Future
@@ -56,7 +56,7 @@ qemu-system-i386 -cdrom os.iso
 In the future, the graphical shell of the system will be developed. At first, there will be a simple old interface, and then we will gradually improve and improve it.
 
 # History
-The development of Irion began on August 4, 2025. Initially, it was written in NASM and C++. There was no clear goal for creating the OS, it was developed for educational purposes.
+The development of Irion began on August 4, 2025. Initially, it was written in NASM and C++. There was no clear goal for creating the OS, it was developed for educational purposes. On August 8, the developer decided to rewrite Irion OS completely in NASM
 
 # License
 Irion OS is distributed under the GNU General Public License. This license applies not only to the OS, but also to all programs and utilities of Irion OS
