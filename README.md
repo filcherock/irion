@@ -15,7 +15,8 @@
 
 # About the project
 <img src="os1.png">
-Irion is a 16-bit operating system written in NASM. This operating system is under development.
+
+Irion is a 16-bit operating system written in NASM. In this operating system, program development is carried out using the [IC32](https://github.com/filcherock/ic32) library. This operating system is under development.
 
 ---
 
