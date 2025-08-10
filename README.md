@@ -27,6 +27,7 @@ Irion is a 16-bit operating system written in NASM. In this operating system, pr
 - **reboot** reboot PC
 - **shutdown** off PC
 - **calc** start calculator
+- **load** load disk sector
 
 ---
 
