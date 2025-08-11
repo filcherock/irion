@@ -20,7 +20,7 @@ Irion is a 16-bit operating system written in NASM. In this operating system, pr
 
 ---
 
-## 📋 Supported commands in x16 PRos terminal
+## 📋 Supported commands in Irion OS
 
 - **help** display list of commands
 - **cls** clear display
