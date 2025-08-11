@@ -60,7 +60,7 @@ sh build.sh
 
 # 🚀 Launch
 ``` bash
-qemu-system-i386 -hda img/irion.img
+qemu-system-i386 -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0 -hda img/irion.img
 ```
 
 # Future
