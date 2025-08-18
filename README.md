@@ -102,7 +102,7 @@ In the future, the graphical shell of the system will be developed. At first, th
 The development of Irion began on August 4, 2025. Initially, it was written in NASM and C++. There was no clear goal for creating the OS, it was developed for educational purposes. On August 8, the developer decided to rewrite Irion OS completely in NASM
 
 # License
-Irion OS is distributed under the GNU General Public License. This license applies not only to the OS, but also to all programs and utilities of Irion OS
+Irion OS is distributed under the [GNU General Public License](https://github.com/filcherock/irion/blob/main/LICENSE). This license applies not only to the OS, but also to all programs and utilities of Irion OS
 
 <div align="center">
   <h3>version in other languages</h3>
